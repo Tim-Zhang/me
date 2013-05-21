@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a:link, a:visited {
+  color: #369;
+  text-decoration: none
+}
+a:hover {
+  color: #369;
+  text-decoration: underline
+}
+
+#timeline_nav li ol a {
+  color: #8D9CCF;
+  font-size: 12px;
+}
