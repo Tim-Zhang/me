@@ -12,65 +12,8 @@
         <div id="timeline_wrapper">
           <div id="timeline" class="clearfix" style="padding-bottom: 25px; ">
 
-            <div class="timeline_marker" data-time="2013-1"><span>DNSPod</span></div>
 
-            <section>
-              <div class="timeline_feed tll_feed">
-                <section id="newsfeed-20966041948" class="tl-a-feed tl-new-feed" style="display: block; ">
-                  <input type="hidden" value="2013-01-03">
-                  <article class="content">
-                  <div class="content-header">
-                    <div class="time">
-                      <span class="day">03</span>
-                      <div class="time-right">
-                        <span class="month">01月</span>
-                        <span class="year">2013</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="content-main">人人将死
-                  </div>
-                  </article>    
-
-                  <div class="legend">
-                  </div>
-
-                </section>
-                <i></i>
-              </div>
-            </section>  
-
-            <section>
-              <div class="timeline_feed tlr_feed">
-                <section id="newsfeed-20966041948" class="tl-a-feed tl-new-feed" style="display: block; ">
-                  <input type="hidden" value="2013-01-03">
-                  <article class="content">
-                  <div class="content-header">
-                    <div class="time">
-                      <span class="day">03</span>
-                      <div class="time-right">
-                        <span class="month">01月</span>
-                        <span class="year">2013</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="content-media">
-                    <div class="cover-photo">
-                    <img src="graduate.png" style="margin-top:-65px;">
-                    </div>
-                  </div>
-                  </article>    
-
-                  <div class="legend">
-                  </div>
-
-                </section>
-                <i></i>
-              </div>
-            </section>  
-
-
-            </div> <!--end timeline-->
+          </div> <!--end timeline-->
 
 
             <div id="timeline_nav" style="left: 1342px; ">
@@ -97,5 +40,63 @@
 
         </div>
       </div>
+
+
+      <script type="text/template" id="timeline-card-template">
+        <section>
+          <div class="timeline_feed tll_feed">
+            <section id="newsfeed-20966041948" class="tl-a-feed tl-new-feed" style="display: block; ">
+              <input type="hidden" value="2013-01-03">
+              <article class="content">
+              <div class="content-header">
+                <div class="time">
+                  <span class="day">03</span>
+                  <div class="time-right">
+                    <span class="month">01月</span>
+                    <span class="year">2013</span>
+                  </div>
+                </div>
+              </div>
+              <div class="content-main">人人将死
+              </div>
+              </article>    
+
+              <div class="legend">
+              </div>
+
+            </section>
+            <i></i>
+          </div>
+        </section>  
+      </script>
+      <script id="timeline-marker-template" type="text/template">
+        <div class="timeline_marker" data-time="2013-1"><span>DNSPod</span></div>
+      </script>
+
+      <script id="timeline-nav-template" type="text/template">
+        var timeline_data = [
+          {
+            "time": "2013-01-03",
+            "content": "test",
+            "image": "",
+            "image_style": ""
+          }
+        ]
+      
+      </script>
+
+      <script src="components/jquery/jquery.min.js" type="text/javascript"></script>
+      <script src="components/handlebars/handlebars.js" type="text/javascript"></script>
+
+      <script type="text/javascript">
+      
+      </script>
+      <script type="text/javascript">
+        $(function() {
+          var template = Handlebars.compile($('#timeline-card-template').html());
+          $('#timeline').html(template());
+        });
+        
+      </script>
     </body>
   </html>
