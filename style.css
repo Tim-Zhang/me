@@ -5,6 +5,7 @@
 
 body {
   font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;
+  font-size: 9pt;
 }
 
 li {
@@ -23,4 +24,49 @@ a:hover {
 #timeline_nav li ol a {
   color: #8D9CCF;
   font-size: 12px;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#timeline_nav {
+  left: 50%;
+  margin-left: 395px;
+}
+#timeline_nav li.active a {
+  color: #369;
+  font-size: 20px;
+}
+#timeline_nav li.active {
+  border-color: #369;
+}
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+  margin: 15px 15px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+pre code {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  white-space: pre;
+  border-radius: 3px;
+}
+.github .timeline_feed p {
+  margin: auto;
+  line-height: inherit;
+}
+.github .tl-a-feed .legend a, .github .tl-a-feed .legend a:visited {
+  color: #4183c4;
+}
+.github .tl-new-feed .legend a {
+  display: inline;
 }
