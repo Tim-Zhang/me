@@ -100,7 +100,9 @@ var profile = {
               {{else}}
                 <div class="content-media">
                   <div class="a-photo">
-                    <img src="{{image}}" {{#if image_style}}style="{{image_style}}"{{/if}}>
+                    <a target="_blank" {{#if image_src}}href="{{image_src}}"{{/if}}>
+                      <img src="{{image}}" {{#if image_style}}style="{{image_style}}"{{/if}}>
+                    </a>
                   </div>
                 </div>
                 {{#if content}}

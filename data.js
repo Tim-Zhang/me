@@ -6,19 +6,33 @@ data.banner = "resource/banner.jpg";
 data.feeds = [
   {
     "date": "2013-04-28",
-    "content": "与[安全宝](www.anquanbao.com)合作，推出DNSPod安全中心",
+    "content": "与[安全宝](http://www.anquanbao.com)合作，推出DNSPod安全中心",
     "comment": "前端工程师 | 项目负责人"
   },
   {
     "date": "2013-04-15",
-    "content": "[DnsGit](http://dnsgit.com)上线，实现自己去年的想法，用Git管理域名，国内首家，而且是该领域全球做的最好的！嘿嘿！[github地址](https://github.com/zewenzhang/dnsgit)(开源了网站代码，DNS模块没有开源)",
+    "content": "[DnsGit](http://dnsgit.com)上线，实现自己去年的想法，用Git管理域名，使用命令行就可以搞定域名管理，支持各种回滚和版本控制，一键将域名还原到历史状态！[github地址](https://github.com/zewenzhang/dnsgit)(开源了网站代码，DNS模块没有开源) [V2EX推广贴](http://www.v2ex.com/t/69482)",
     "comment": "CEO | 前端 | Node.js"
   },
   {
     "date": "2013-04-01",
-    "content": "[节操网](http://jiecao.pw)隆重上线（刚上线时只有“已上线”三个字），用于接受各种吐槽和赞助各种活动（因为是空壳只能这样啦！）",
+    "content": "[节操网](http://jiecao.pw)隆重上线（刚上线时只有“已上线”三个字），用于接受各种吐槽和赞助各种活动（因为是空壳只能这样啦！），将专注于做各种搞怪的功能",
     "image": "resource/jiecao.png",
+    "image_src": "http://jiecao.pw",
     "comment": "CEO|节操君"
+  },
+  {
+    "date": "2013-03-27",
+    "content": "推出系列做菜视频——[《银河怡海教你做菜》](http://www.youku.com/playlist_show/id_19105208.html)拯救宅男宅女于水火之中！请关注微信公共帐号yhyhdnspod",
+    "image": "resource/dnspod_yhyh.png",
+    "image_src": "http://www.youku.com/playlist_show/id_19105208.html",
+    "comment": "爱生活，爱做菜"
+  },
+  {
+    "date": "2013-01-24",
+    "content": "我在韩国，去了之后发现英语不好用，看这么多年韩剧总算派上了用场！韩国人礼貌，爱美，爱干净，关键是妹子不错！",
+    "image": "resource/dnspod_korea.jpg",
+    "comment": "那些年我们一起看过的韩剧"
   },
   {
     "date": "2013-01-01",
@@ -29,13 +43,15 @@ data.feeds = [
     "date": "2012-09-15",
     "content": "与QQ空间、CNNIC合作推出[QQ.CN域名注册服务](http://qzs.qq.com/qzone/mall/act/20121231_vip_domain/)，连夜抢注QQ号域名100万，神马？？？上新闻了，我交代，是我干的！[人民网](http://it.people.com.cn/n/2012/0906/c1009-18940643.html) [网易科技](http://tech.163.com/12/0907/02/8AP0PUUP000915BF.html)",
     "image": "resource/dnspod_qzone.jpg",
+    "image_src": "http://qzs.qq.com/qzone/mall/act/20121231_vip_domain/",
     "comment": "项目采用Python开发，给QQ空间提供restful API"
   },
   {
     "date": "2012-08-15",
-    "content": "做了个简单的Chrome查单词插件，后端基于同事的英语教育网站[滚去背单词](http://rollingword.com)。[github地址](https://github.com/zewenzhang/Rolling-Chrome-Extension)",
+    "content": "做了个Chrome查单词插件，后端基于同事的英语教育网站[滚去背单词](http://rollingword.com)。[github地址](https://github.com/zewenzhang/Rolling-Chrome-Extension)",
     "image": "resource/dnspod_rolling.png",
     "image_style": "width: auto",
+    "image_src": "https://chrome.google.com/webstore/detail/%E6%BB%9A%E5%8E%BB%E8%83%8C%E5%8D%95%E8%AF%8D%E6%8F%92%E4%BB%B6/bimhfdjjfljpconebbamgcpkjodgohek?utm_source=chrome-ntp-icon",
     "comment": "Javascript | Chrome Extension"
   },
   {
@@ -55,6 +71,7 @@ data.feeds = [
     "content": "加入[DNSPod](https://www.dnspod.cn)，这家充满着传奇的公司，这家大牛满天飞的公司。我每天仰视他们，脖子都快断了，哎呀。。揉揉！",
     "image": "resource/dnspod_logo.png",
     "image_style": "width: auto",
+    "image_src": "https://www.dnspod.cn",
     "comment": "前端工程师 | WEB Team Leader"
   },
   {
@@ -62,6 +79,7 @@ data.feeds = [
     "content": "[米饭网](http://www.mifan365.com)——烟台最大的团购网站。公司在成长，我也从唯一程序员变成leader，服务器从windows换成3台Debian（web,database,backup）,当然了我成了运维（好囧）。在米饭网工作两年遇到了很多高并发问题和DDOS攻击，现在想想还挺好玩的。",
     "image": "resource/mifan_sofa.jpg",
     "image_style": "",
+    "image_src": "http://www.mifan365.com",
     "comment": "PHP程序员 | Linux(ESX)服务器运维" 
   },
   {
@@ -76,6 +94,7 @@ data.feeds = [
     "content": "[米饭网](http://www.mifan365.com)——从零开始做团购。非常不幸的是，在这里，我是个能做水晶头，能修打印机的程序员。等等！先不要拍砖，人少没办法啊！",
     "image": "resource/mifan_wall.jpg",
     "image_style": "",
+    "image_src": "http://www.mifan365.com",
     "comment": "PHP程序员 | Linux(ESX)服务器运维" 
   },
   {
