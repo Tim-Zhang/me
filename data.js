@@ -27,7 +27,7 @@ data.feeds = [
   },
   {
     "date": "2012-09-15",
-    "content": "与QQ空间、CNNIC合作推出[QQ.CN域名注册服务](http://qzs.qq.com/qzone/mall/act/20121231_vip_domain/)，连夜抢注QQ号域名100万，神马？？？上新闻了，我交代是我干的！[人民网](http://it.people.com.cn/n/2012/0906/c1009-18940643.html)[网易科技](http://tech.163.com/12/0907/02/8AP0PUUP000915BF.html)",
+    "content": "与QQ空间、CNNIC合作推出[QQ.CN域名注册服务](http://qzs.qq.com/qzone/mall/act/20121231_vip_domain/)，连夜抢注QQ号域名100万，神马？？？上新闻了，我交代，是我干的！[人民网](http://it.people.com.cn/n/2012/0906/c1009-18940643.html) [网易科技](http://tech.163.com/12/0907/02/8AP0PUUP000915BF.html)",
     "image": "resource/dnspod_qzone.jpg",
     "comment": "项目采用Python开发，给QQ空间提供restful API"
   },
