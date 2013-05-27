@@ -24,66 +24,64 @@ _/    _/    _/_/_/    _/_/_/    _/    _/_/_/    _/_/_/    _/_/_/
     <div id="container">
       <div id="profile_wrapper">
         <div id="timeline_wrapper">
-
-          <div id="header"></div>
+          <div id="header">
+            <!-- fill -->
+          </div>
           <div id="timeline" class="clearfix" style="padding-bottom: 25px; ">
-
-          </div> <!--end timeline-->
-        </div> <!--end timeline_wrapper-->
-
+            <!-- fill -->
+          </div> <!-- end timeline -->
+        </div> <!-- end timeline_wrapper -->
         <div id="timeline_nav">
-
-        </div>
-
-
+          <!-- fill -->
         </div>
       </div>
-
-
+    </div>
       
-      <script type="text/template" id="banner-template">
-          <div id="cover">
-            <div id="cover_image">
-              <img src="{{this}}" width="860" height="573" style="">
-              <div class="comboBox" style="display: none;">
-              </div>
-            </div>
+    <!-- templates -->
+    <script type="text/template" id="banner-template">
+      <div id="cover">
+        <div id="cover_image">
+          <img src="{{this}}" width="860" height="573" style="">
+          <div class="comboBox" style="display: none;">
           </div>
-      </script>
+        </div>
+      </div>
+    </script>
 
-      <script type="text/template" id="code-intro-template">
-          <div id="operate_area" class="clearfix">
-            <h1 class="avatar_title"></h1>
-            <pre>
-              <code>
+    <script type="text/template" id="code-intro-template">
+      <div id="operate_area" class="clearfix">
+        <h1 class="avatar_title"></h1>
+        <pre>
+          <code>
 var profile = {
-  "name": "张泽文",
-  "english_name": "Tim",
-  "title": ["DNSPod前端工程师", "DNSPod Web团队Leader", "节操网CEO"],
-  "language": ["Javascript", "CSS", "HTML", "PHP"],
-  "OS": {"name": "Ubuntu 12.04", "windows_manager": "i3", "shell": "zsh"},
-  "VPS": ["EC2", "Oneasiahost"],
-  "editor": "vim",
-  "github": "https://github.com/zewenzhang"
-};              </code>
-            </pre>
-          </div>
-      </script>
+"name": "张泽文",
+"english_name": "Tim",
+"title": ["DNSPod前端工程师", "DNSPod Web团队Leader", "节操网CEO"],
+"language": ["Javascript", "CSS", "HTML", "PHP"],
+"OS": {"name": "Ubuntu 12.04", "windows_manager": "i3", "shell": "zsh"},
+"VPS": ["EC2", "Oneasiahost"],
+"editor": "vim",
+"github": "https://github.com/zewenzhang"
+};          </code>
+        </pre>
+      </div>
+    </script>
 
-      <script type="text/template" id="timeline-nav-template">
-        <li><a href="#">现在</a></li>
-        {{#each years}}
-          <li data-time="{{this}}"><a href="#anchor-{{this}}">{{this}}</a></li>
-        {{/each}}
-        {{#if birth}}
-          <li data-time="born"><a href="#born-le">出生</a></li>
-        {{/if}}
-      </script>
-      <script type="text/template" id="timeline-card-template">
-        <section>
+    <script type="text/template" id="timeline-nav-template">
+      <li><a href="#">现在</a></li>
+      {{#each years}}
+        <li data-time="{{this}}"><a href="#anchor-{{this}}">{{this}}</a></li>
+      {{/each}}
+      {{#if birth}}
+        <li data-time="born"><a href="#born-le">出生</a></li>
+      {{/if}}
+    </script>
+
+    <script type="text/template" id="timeline-card-template">
+      <section>
         <div class="timeline_feed {{#if left}}tll_feed{{else}}tlr_feed{{/if}}">
-            <section class="tl-a-feed tl-new-feed" style="display: block; ">
-              <article class="content">
+          <section class="tl-a-feed tl-new-feed" style="display: block; ">
+            <article class="content">
               <div class="content-header">
                 <div class="time">
                   <span class="day">{{day}}</span>
@@ -94,60 +92,59 @@ var profile = {
                 </div>
               </div>
               {{#unless image}}
-                <div class="content-main">
-                  {{{content}}}
-                </div>
+              <div class="content-main">
+                {{{content}}}
+              </div>
               {{else}}
-                <div class="content-media">
-                  <div class="a-photo">
-                    <a target="_blank" {{#if image_src}}href="{{image_src}}"{{/if}}>
-                      <img src="{{image}}" {{#if image_style}}style="{{image_style}}"{{/if}}>
-                    </a>
-                  </div>
+              <div class="content-media">
+                <div class="a-photo">
+                  <a target="_blank" {{#if image_src}}href="{{image_src}}"{{/if}}>
+                    <img src="{{image}}" {{#if image_style}}style="{{image_style}}"{{/if}}>
+                  </a>
                 </div>
-                {{#if content}}
-                  <div class="content-photo">{{{content}}}</div>
-                {{/if}}
+              </div>
+              {{#if content}}
+              <div class="content-photo">{{{content}}}</div>
+              {{/if}}
               {{/unless}}
-              </article>    
-
-              <div class="legend">
-                {{{comment}}}
-              </div>
-
-            </section>
-            <i></i>
-          </div>
-        </section>  
-      </script>
-
-      <script id="timeline-marker-template" type="text/template">
-        <div class="timeline_marker" id="anchor-{{year}}" data-time="{{year}}"><span>{{year}}</span></div>
-      </script>
-
-      <script id="born-template" type="text/template">
-        <div class="born" id="born-le">
-          <div class="timeline_marker" data-time="born"><span>出生</span></div>
-          <div class="timeline_feed tlf_feed">
-            <section class="tl-a-feed">
-            <article class="content">
-            <div class="content-main">
-              <div class="life-event">
-                <span class="avatar">
-                  <img src="images/le-born.png">
-                </span>
-                <h3 class="event-type">呱呱坠地鸟</h3>
-                <p class="event-info">{{this}}</p>
-              </div>
+            </article>    
+            <div class="legend">
+              {{{comment}}}
             </div>
-            </article>
-            </section><i></i>
-          </div>
+          </section>
+          <i></i>
         </div>
-      </script>
+      </section>  
+    </script>
 
-      <script src="data.js" type="text/javascript"></script>
-      
-      <script type="text/javascript" data-main="index" src="components/requirejs/require.js"></script>
-    </body>
-  </html>
+    <script id="timeline-marker-template" type="text/template">
+      <div class="timeline_marker" id="anchor-{{year}}" data-time="{{year}}"><span>{{year}}</span></div>
+    </script>
+
+    <script id="born-template" type="text/template">
+      <div class="born" id="born-le">
+        <div class="timeline_marker" data-time="born"><span>出生</span></div>
+        <div class="timeline_feed tlf_feed">
+          <section class="tl-a-feed">
+          <article class="content">
+          <div class="content-main">
+            <div class="life-event">
+              <span class="avatar">
+                <img src="images/le-born.png">
+              </span>
+              <h3 class="event-type">呱呱坠地鸟</h3>
+              <p class="event-info">{{this}}</p>
+            </div>
+          </div>
+          </article>
+          </section><i></i>
+        </div>
+      </div>
+    </script>
+
+    <!-- scripts -->
+    <script src="data.js" type="text/javascript"></script>
+    <script type="text/javascript" data-main="index" src="components/requirejs/require.js"></script>
+
+  </body>
+</html>
