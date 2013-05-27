@@ -61,7 +61,7 @@ pre code {
   border-radius: 3px;
 }
 .github .timeline_feed p {
-  margin: auto;
+  margin: 0;
   line-height: inherit;
 }
 .github .tl-a-feed .legend a, .github .tl-a-feed .legend a:visited {
