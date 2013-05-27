@@ -70,6 +70,10 @@ pre code {
 .github .tl-new-feed .legend a {
   display: inline;
 }
+/*ie 6|7 fix*/
 .tl-new-feed .content-header .day {
-  *margin: 0;
+  *line-height: 35px;
+}
+.legend p {
+  *line-height: 34px;
 }
