@@ -28,6 +28,12 @@ require.config({
 
 define(['jquery', 'underscore', 'backbone', 'handlebars', 'moment', 'marked'], 
   function($, _, Backbone, Handlebars, moment, marked) {
+    //暂不支持IE6
+    if ($.browser.msie && $.browser.version === "6.0") {
+      alert('暂不支持IE6，我现在没空搞兼容性！');
+      location.replace('http://jiecao.pw');
+      return;
+    }
     require(['scrollspy']);
     var getYear = function(date) {
       return moment(date).year();
