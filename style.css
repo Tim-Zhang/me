@@ -73,7 +73,7 @@ pre code {
 /*ie 6|7 fix*/
 .tl-new-feed .content-header .day {
   *line-height: 35px;
-  _line-height: 38px;
+  _line-height: 41px;
 }
 .github .legend p {
   *line-height: 34px;
