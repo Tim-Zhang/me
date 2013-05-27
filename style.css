@@ -70,3 +70,6 @@ pre code {
 .github .tl-new-feed .legend a {
   display: inline;
 }
+.tl-new-feed .content-header .day {
+  _margin: 0;
+}
