@@ -71,5 +71,5 @@ pre code {
   display: inline;
 }
 .tl-new-feed .content-header .day {
-  _margin: 0;
+  *margin: 0;
 }
