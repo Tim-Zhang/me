@@ -35,6 +35,7 @@ data.feeds = [
     "date": "2012-08-15",
     "content": "做了个简单的Chrome查单词插件，后端基于同事的英语教育网站[滚去背单词](http://rollingword.com)。[github地址](https://github.com/zewenzhang/Rolling-Chrome-Extension)",
     "image": "resource/dnspod_rolling.png",
+    "image_style": "width: auto",
     "comment": "Javascript | Chrome Extension"
   },
   {
