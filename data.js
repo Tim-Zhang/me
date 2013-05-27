@@ -16,7 +16,7 @@ data.feeds = [
   },
   {
     "date": "2013-04-01",
-    "content": "[节操网](http://jiecao.pw)隆重上线（刚上线时只有“已上线”三个字），用于接受各种吐操和赞助各种活动（因为是空壳只能这样啦！）",
+    "content": "[节操网](http://jiecao.pw)隆重上线（刚上线时只有“已上线”三个字），用于接受各种吐槽和赞助各种活动（因为是空壳只能这样啦！）",
     "image": "resource/jiecao.png",
     "comment": "CEO|节操君"
   },
