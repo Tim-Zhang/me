@@ -36,7 +36,7 @@ data.feeds = [
   },
   {
     "date": "2013-01-01",
-    "content": "与腾讯CDC合作全新改版[D监控](https://www.dnspod.cn/Monitor)，与腾讯的交互设计师和视觉设计师一起工作，学到了很多交互知识并被他们的专业精神所打动",
+    "content": "与腾讯CDC合作全新改版[D监控](https://www.dnspod.cn/Monitor)，和腾讯的交互设计师和视觉设计师一起工作，学到了很多交互知识并被他们的专业精神所打动",
     "comment": "前端工程师 | WEB Team Leader"
   },
   {
