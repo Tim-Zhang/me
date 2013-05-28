@@ -69,7 +69,7 @@ data.feeds = [
   {
     "date": "2012-03-11",
     "content": "加入[DNSPod](https://www.dnspod.cn)，这家充满着传奇的公司，这家大牛满天飞的公司。我每天仰视他们，脖子都快断了，哎呀。。揉揉！",
-    "image": "resource/dnspod_logo.png",
+    "image": "resource/dnspod_wall.jpg",
     "image_style": "width: auto",
     "image_src": "https://www.dnspod.cn",
     "comment": "前端工程师 | WEB Team Leader"
